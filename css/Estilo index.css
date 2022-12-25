@@ -1,0 +1,214 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    font-family: 'Spartan', sans-serif;
+}
+
+/*Estilo Menú*/
+
+header{
+    background-image: url(../img/Index/Portada.jpg);
+    background-position: 1% 70%;
+    background-attachment: fixed;
+
+    height: 600px;
+}
+
+.header{
+    width: 100%;
+    display: grid;
+    grid-template-rows: 1;
+
+    z-index: 999;
+}
+
+div.sub-header{
+    display: grid;
+    grid-template-columns: 100%;
+    position: fixed;
+
+    width: 100%;
+}
+
+header img{
+    width: 30px;
+    height: 30px;
+}
+
+#btn-menu{
+    display: none;
+}
+
+header label{
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+}
+
+header label:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+
+.menu{
+    padding-right: 50px;
+    padding-left: 50px;
+    background: rgba(0,0,0,0.6);
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.menu li:hover{
+    background: rgba(146, 146, 146, 0.6);
+    text-decoration: 2px underline;
+}
+
+.menu li a.presente{
+    text-decoration: 2px underline;
+}
+
+.título{
+    font-family: sans-serif;
+    font-size: 3em;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-align: center;
+    background: rgba(0,0,0,0.4);
+
+    margin: auto;
+    padding: 30px;
+    margin: 100px;
+}
+
+.solicitar{
+    display: flex;
+    justify-content: center;
+}
+
+.solicitar a{
+    color: white;
+    background: rgba(0,0,0,0.8);
+    padding: 20px;
+    font-size: 1.2em;
+    border-radius: 12px;
+    border: 3px solid white;
+}
+
+.solicitar a:hover{
+    background: rgba(0,0,0,0.93);
+    font-weight: bolder;
+}
+.sub-header.abajo{
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+}
+
+
+@media (max-width:768px) {
+
+    .sub-header.abajo{
+        background: none;
+    }
+
+    .título{
+        font-size: 2em;
+    }
+
+    div.sub-header{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    }
+
+    header label {
+        display: block;
+    }
+
+    .menu{
+        position: absolute;
+        background-color: rgba(0,0,0,0.6);
+        width: 70%;
+        margin-left: -100%;
+        transition: all 0.5s;
+
+        padding-right: 0px;
+    }
+    
+    .menu ul{
+        flex-direction: column;
+    }
+
+    .menu li{
+        border-top: 1px solid white;
+    }
+
+    .menu li a:hover{
+        background: rgba(0,0,0,0.9);
+    }
+
+    #btn-menu:checked ~ .menu {
+        margin: 0;
+    }
+
+    .menú{
+        display:initial;
+    }
+
+    #iconmenu{
+        font-size: 30px;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 5px;
+        border-radius: 100%;
+        margin: 0 auto;
+    }
+}
+
+/*Finaliza Estilo Menú*/
+
+
+/*Inicia contenido-total*/
+
+.seccion1{
+    max-width: 920px;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.seccion1 p{
+    line-height: 1.5em;
+    margin: 30px;
+}
+
+/*Finaliza contenido-total*/
+
+/*
+Colores: 
+Rosado: #BC109B
+
+Morado 1: #720D92
+Morado 2: #3C1453
+Morado 3: #3D1051
+
+
+TÍTULOS: #3E1052
+FONDO: #12172F
+
+*/
